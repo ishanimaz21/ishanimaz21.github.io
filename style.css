@@ -1,93 +1,100 @@
-body{
-    font-family: helvetica, arial, sans-serif;
-    margin: 0px;
-    font-size: 1.5vw;
-}
-
-
 #logo {
-    margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    /* box-shadow: 8px 8px 10px 3px orangered; */
-    width: 17%;
-    border-radius: 30%;
+    color: red;
 }
 
-ul {
-    margin: 0px;
-}
-body > header{
-    background-color: orange;
-    color: rgb(125, 23, 57);
-    display: flex;
-    height: 10vh;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#navbar {
-    display: flex;
-}
-
-#navbar>li {
-    padding: 8px;
-    margin: 16px;
-}
-
-body>header>nav>ul{
-    list-style: none;
-    text-decoration: none;
-}
-
-.navbutton {
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 10%;
-}
-
-body>main article {
-    width: 70%;
-    margin: auto;
-}
-#main-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-#main-content>div {
-    width: 70%;
+.image {
+    width: 20%;
 }
 
 
-form{
-    text-align: center;
-}
-h2{
-    text-align: center;
-}
-body > footer {
-    background-color: orange;
-    display: flex;
-}
 
-#footer-ul {
-    display: flex;
-    list-style: none;
-}
-
-#footer-ul> div>li {
-    margin-left: 12px;
+#heading {
+    grid-area: heading;
     
 }
 
-#footer-ul > div > li > a {
-    color: white;
-    text-decoration: none;
-}
-img{
-    border-radius: 20%;
+#fantasy {
+    grid-area: fantasy;
 }
 
+#six {
+    grid-area: six;
+}
+#good-omens {
+    grid-area: good-omens;
+}
+#wind {
+    grid-area: wind;
+}
+#savage {
+    grid-area: savage;
+}
+#scifi {
+    grid-area: scifi;
+}
+#galaxy {
+    grid-area: galaxy;
+}
+#hail_mary {
+    grid-area: hail_mary;
+}
+#planet {
+    grid-area: planet;
+}
+#twenty-one {
+    grid-area: twenty-one;
+}
+#ya {
+    grid-area: ya;
+}
+#ari-dante {
+    grid-area: ari-dante;
+}
+#more {
+    grid-area: more;
+}
+#stop {
+    grid-area: stop;
+}
+#vice {
+    grid-area: vice;
+}
+
+/* #grid-container {
+    display: grid;
+    grid-template-areas: 
+    "heading heading heading"
+    "fantasy scifi ya"
+    "six galaxy ari_dante"
+    "good_omens hail_mary more"
+    "wind planet stop"
+    "savage twenty_one vice"
+    ;
+    
+} */
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "heading heading heading heading heading"
+        "fantasy six good-omens wind savage"
+        "scifi galaxy hail-mary planet twenty-one"
+        "ya ari-dante more stop vice";
+    
+}  
+
+/* #grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "heading heading heading heading heading"
+        "fantasy scifi ya"
+        "six galaxy ari-dante"
+        "good-omens hail-mary more"
+        "wind planet stop"
+        "savage twenty-one vice";
+    gap: 10px;
+} */
